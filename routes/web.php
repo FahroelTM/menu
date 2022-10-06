@@ -29,4 +29,9 @@ Route::get('/beranda', [LatihanController::class, 'beranda']);
 Auth::routes();
 
 
-Route::get('homepage', [\App\Http\Controllers\HomepageController::class, 'index']);
+Route::get('index', [\App\Http\Controllers\HomepageController::class, 'index']);
+Route::get('about', [HomepageController::class, 'about']);
+Route::get('kategori', [HomepageController::class, 'kategory']);
+Route::get('contact', [HomepageController::class, 'contact']);
+
+
